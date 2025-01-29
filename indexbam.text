@@ -1,0 +1,4 @@
+for bam in ~/madhu/Ecoli/results/aligned/*.sorted.bam; do
+    samtools index $bam
+done
+

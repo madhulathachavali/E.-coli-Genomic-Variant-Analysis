@@ -1,0 +1,8 @@
+# Create index for reference genome
+samtools faidx /home/akella/madhu/Ecoli/ASM584v2/data/GCF_000005845.2/GCF_000005845.2_ASM584v2_genomic.fna
+
+# Variant calling with full path
+bcftools mpileup -f /home/akella/madhu/Ecoli/ASM584v2/data/GCF_000005845.2/GCF_000005845.2_ASM584v2_genomic.fna \
+    -Ou ~/madhu/Ecoli/results/aligned/*.sorted.bam | \
+bcftools call -mv -Ov -o variants.vcf
+

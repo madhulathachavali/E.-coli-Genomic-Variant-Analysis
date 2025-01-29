@@ -1,0 +1,38 @@
+
+
+
+#!/bin/bash
+
+REF="/home/akella/madhu/Ecoli/ASM584v2/data/GCF_000005845.2/GCF_000005845.2_ASM584v2_genomic.fna"
+BWA_INDEX="/home/akella/madhu/Ecoli/ASM584v2/data/GCF_000005845.2/results/bwa_index/GCF_000005845.2_ASM584v2_genomic.fna"
+INPUT_DIR="$HOME/madhu/Ecoli/results/processed_samples/fastq/paired_end"
+OUTPUT_DIR="$HOME/madhu/Ecoli/results/aligned"
+
+mkdir -p $OUTPUT_DIR
+
+for sample in SRR13921543 SRR13921545 SRR13921546 SRR13921549 SRR13921550; do
+    bwa mem -t 8 $BWA_INDEX \
+        $INPUT_DIR/${sample}_trimmed_1.fastq \
+        $INPUT_DIR/${sample}_trimmed_2.fastq | \
+    samtools view -b | \
+    samtools sort -o $OUTPUT_DIR/${sample}.sorted.bam
+done
+
+
+#!/bin/bash
+
+REF="/home/akella/madhu/Ecoli/ASM584v2/data/GCF_000005845.2/GCF_000005845.2_ASM584v2_genomic.fna"
+BWA_INDEX="/home/akella/madhu/Ecoli/ASM584v2/data/GCF_000005845.2/results/bwa_index/GCF_000005845.2_ASM584v2_genomic.fna"
+INPUT_DIR="$HOME/madhu/Ecoli/results/processed_samples/fastq/paired_end"
+OUTPUT_DIR="$HOME/madhu/Ecoli/results/aligned"
+
+mkdir -p $OUTPUT_DIR
+
+for sample in SRR13921551 SRR13921552 SRR13921554 SRR13921555 SRR13921556 SRR13921557 SRR13921558 SRR13921559 SRR13921560 SRR13921561; do
+    bwa mem -t 8 $BWA_INDEX \
+        $INPUT_DIR/${sample}_trimmed_1.fastq \
+        $INPUT_DIR/${sample}_trimmed_2.fastq | \
+    samtools view -b | \
+    samtools sort -o $OUTPUT_DIR/${sample}.sorted.bam
+done
+
