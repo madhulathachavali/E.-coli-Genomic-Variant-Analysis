@@ -3,6 +3,29 @@
 ### 
 This project focuses on processing 15 E. coli samples to generate and analyze VCF files using Nextflow. The workflow uses command-line tools such as Nextflow, bcftools, and the SRA Toolkit (https://www.ncbi.nlm.nih.gov/sra?term=SAMN02604091)
 
+## Sample Information 
+
+| Sample ID       | Run Accession  | Instrument              | Strategy       | # of Spots | # of Bases | Size   | Description |
+|----------------|---------------|-------------------------|---------------|------------|------------|--------|-------------|
+| EK-bisulfite   | SRR13921543    | Illumina MiSeq         | Bisulfite-Seq | 2M         | 601.8M     | 297.5Mb | Bisulfite-seq for methylase specificity |
+| EK02-dnaseq    | SRR13921545    | Illumina NovaSeq 6000  | WGS           | 5.1M       | 1G         | 308.2Mb | Whole Genome Sequencing |
+| EK01-dnaseq    | SRR13921546    | Illumina NovaSeq 6000  | WGS           | 4.9M       | 970.4M     | 288.6Mb | Whole Genome Sequencing |
+| EK02-rims-3h-rep | SRR13921549 | Illumina NovaSeq 6000  | RIMS-seq (3h NaOH) | 7.4M | 1.5G | 443.5Mb | RIMS-seq 3-hour incubation |
+| EK02-rims-1h-rep | SRR13921550 | Illumina NovaSeq 6000  | RIMS-seq (1h NaOH) | 7.2M | 1.4G | 429Mb | RIMS-seq 1-hour incubation |
+| EK02-rims-10min-rep | SRR13921551 | Illumina NovaSeq 6000 | RIMS-seq (10min NaOH) | 8.5M | 1.7G | 511.5Mb | RIMS-seq 10-minute incubation |
+| EK02-control-3h-rep | SRR13921552 | Illumina NovaSeq 6000 | Control TE (3h) | 7.2M | 1.4G | 435.2Mb | Control TE 3-hour incubation |
+| EK02-control-1h-rep | SRR13921554 | Illumina NovaSeq 6000 | Control TE (1h) | 7.2M | 1.4G | 434.5Mb | Control TE 1-hour incubation |
+| EK02-control-10min-rep | SRR13921555 | Illumina NovaSeq 6000 | Control TE (10min) | 7.4M | 1.5G | 447.5Mb | Control TE 10-minute incubation |
+| EK01-rims-3h | SRR13921556 | Illumina NovaSeq 6000 | RIMS-seq (3h NaOH) | 8.1M | 1.6G | 482.9Mb | RIMS-seq 3-hour incubation |
+| EK01-rims-1h | SRR13921557 | Illumina NovaSeq 6000 | RIMS-seq (1h NaOH) | 6.4M | 1.3G | 384Mb | RIMS-seq 1-hour incubation |
+| EK01-rims-10min | SRR13921558 | Illumina NovaSeq 6000 | RIMS-seq (10min NaOH) | 7.3M | 1.5G | 442.6Mb | RIMS-seq 10-minute incubation |
+| EK01-control-3h | SRR13921559 | Illumina NovaSeq 6000 | Control TE (3h) | 5.8M | 1.2G | 347Mb | Control TE 3-hour incubation |
+| EK01-control-1h | SRR13921560 | Illumina NovaSeq 6000 | Control TE (1h) | 7.1M | 1.4G | 430.2Mb | Control TE 1-hour incubation |
+| EK01-control-10min | SRR13921561 | Illumina NovaSeq 6000 | Control TE (10min) | 6M | 1.2G | 358.3Mb | Control TE 10-minute incubation |
+| EcoliK12-CCS-15kb | SRR10971019 | PacBio Sequel | WGS (HiFi Reads) | 95,514 | 1.4G | 1.1Gb | PacBio HiFi sequencing with 15kb size selection |
+
+
+
 ### Objectives
 - Perform quality control (QC) on raw sequencing data.
 - Convert raw data to SAM, BAM, and eventually VCF format.
@@ -25,9 +48,7 @@ This project focuses on processing 15 E. coli samples to generate and analyze VC
 - Nextflow: Workflow management for reproducible data processing pipelines.
 - SRA Toolkit: Retrieval of raw sequencing data.
 - FastQC & Trimmomatic: Quality control and read trimming.
-- bcftools: Variant calling and VCF file generation.
-- Phylogenetic Analysis Tools: For studying evolutionary relationships.
-
+- 
 ## VCF Analysis and Downstream Processing
 
 ## 📌 Prerequisites
