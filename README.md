@@ -140,6 +140,19 @@ ls -lh /Users/madhuchavali/Desktop/Ecoli/Ecoli_BAM_Files/ | grep ".bai"
 | Step 6 | `*.sorted.bam`, `*.bai` | Indexed BAM files |
 
 ---
+### Summary of Variant Analysis
 
+#### Variant Types:
+SNPs: 191,547 (99.92%)
+Indels: 149 (0.08%)
+
+#### Quality Scores:
+Median: 199.503
+Range: 3.03 to 3549.08
+
+#### Mutation Patterns:
+Transitions: 182,589 (95.14%)
+Transversions: 9,319 (4.86%)
+Ti/Tv Ratio: 19.59
 
 
