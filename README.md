@@ -1,4 +1,4 @@
-# E.-coli-Genomic-Variant-Analysis
+# E.coli-Genomic-Variant-Analysis
 
 ### 
 This project focuses on processing 15 E. coli samples to generate and analyze VCF files using Nextflow. The workflow uses command-line tools such as Nextflow, bcftools, and the SRA Toolkit (https://www.ncbi.nlm.nih.gov/sra?term=SAMN02604091)
