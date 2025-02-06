@@ -173,6 +173,8 @@ ls -lh /Users/madhuchavali/Desktop/Ecoli/Ecoli_BAM_Files/ | grep ".bai"
 #### Chromosome Distribution:
 -  191,695 variants are on NC_000913.3, which is the E. coli K-12 reference genome
 
+<img width="758" alt="image" src="https://github.com/user-attachments/assets/b0d8a2e8-fbbe-4b69-a06e-eb05f635538d" />
+
 ### Summary of High Impact Variants
 
 #### Variant Types
