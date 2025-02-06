@@ -142,17 +142,55 @@ ls -lh /Users/madhuchavali/Desktop/Ecoli/Ecoli_BAM_Files/ | grep ".bai"
 ---
 ### Summary of Variant Analysis
 
-#### Variant Types:
-SNPs: 191,547 (99.92%)
-Indels: 149 (0.08%)
+#### Variant Type Distribution
+- SNPs: 191,547 (99.92%)
+- Indels: 149 (0.08%)
+  
+<img width="605" alt="image" src="https://github.com/user-attachments/assets/38ef54dc-6c8d-4c46-a5ab-a0be0c2a08d9" />
 
 #### Quality Scores:
-Median: 199.503
-Range: 3.03 to 3549.08
+- Median: 199.503
+- Range: 3.03 to 3549.08
+
+<img width="751" alt="image" src="https://github.com/user-attachments/assets/f5f9d44b-0f33-4082-aaf4-163295a2abab" />
 
 #### Mutation Patterns:
-Transitions: 182,589 (95.14%)
-Transversions: 9,319 (4.86%)
-Ti/Tv Ratio: 19.59
+- Transitions: 182,589 (95.14%)
+- Transversions: 9,319 (4.86%)
+- Ti/Tv Ratio: 19.59
+
+#### Allele Frequency
+- Mean: 0.054
+- Median: 0.067
+- Range: 0.033 to 1.000
+- Most variants are rare (AF < 0.05). There are some common variants (AF = 1).
+
+#### Sequencing Depth:
+- Mean: 3,017.80
+- Median: 3,207
+- Range: 226 to 3,747
+
+#### Chromosome Distribution:
+-  191,695 variants are on NC_000913.3, which is the E. coli K-12 reference genome
+
+### Summary of High Impact Variants
+
+#### Variant Types
+- Most of the variants are single nucleotide polymorphisms (SNPs).
+- Total variants: 7287 Total SNPs: 7251
+- C>T transitions: 3514 G>A transitions: 3707
+- Transition/Transversion ratio: 314.26
+
+#### Quality Scores (QUAL)
+- Range from 3.14 to 3260.16
+
+#### Allele Counts (AC) and Numbers (AN)
+- Allele Counts (AC) Range: 1 to 26 Most variants have low AC Allele Numbers (AN): Predominantly 30, some 28
+- Allele Frequencies (AF) Mean: 0.052 Range: 0.033 to 0.929
+
+
+
+
+
 
 
